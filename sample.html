@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Victor's Upholstery</title>
+    <link rel="icon" type="image/icon" href="vp.png">
+    <link rel="stylesheet" href="sample.css">
+    <link rel="stylesheet" href="fonts/css/all.css">
+
+    <!--Swiper slideshow carousel-->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    
+    
+    <!--Swiper slider categories-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    
+ 
+<!--Javascript-->
+<script src="script.js"></script>
+
+   <!--  <script type= "text/javascript" src= "script.js"></script>-->
+
+
+</head>
+<body>
+    <!--Header start -->
+
+    <header class="header">
+
+        <div class="header-1">
+         <!-- <img src="vp.png" class= "logo" alt="">-->
+            <a href="#" class="logo"> <i class=""></i> Victor's Upholstery</a>
+                <form action="" class="search-form">
+                <input type="search" name="" placeholder="Search here" id="search-box">
+                <label for="search-box" class="fa fa-search"></label>
+                
+            </form>
+        <!--icons-->
+            <div class="icons">
+               <div id="search-btn" class="fa fa-search"></div>   
+                <a href="#" class="fa fa-shopping-cart"></a>
+                <a href="login.html" div id="login-btn" class="fa fa-user"></div></a>
+            </div>
+  
+        </div>
+    <!--navbar-->
+        <div class="header-2">
+            <nav class="navbar">
+                <a href="#">Home</a>
+                <a href="#">Sofas & Sectionals</a>
+                <a href="#">Fabrics & Swatches</a>
+                <a href="#">Throw Pillow</a>
+           
+            </nav>
+        </div>
+    
+    </header>
+
+
+     
+
+    <!--slideshow start-->
+    
+<div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <img class = "image-slider" src="image1.jpg" >
+      </div>
+        
+        <div class="mySlides fade">
+      
+          <img class = "image-slider" src="image2.jpg" >
+        </div>
+        
+        <div class="mySlides fade">
+          <img class = "image-slider" src="image3.jpg" >
+       
+        </div> 
+        
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+        </div>
+<div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+
+            
+   
+       
+
+          <script>
+                
+  /* slideshow/carousel  */
+
+            let slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+           
+            function showSlides(n) {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              let dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+            }
+            
+            </script>
+          <!---Categories-->
+          <div class = "container">
+            <div class ="product-container">
+                <div class = "title-categories">Categories</div>
+                 </div>
+                  <div class ="row">
+                  <!--Start-->
+                  <div class ="card">
+                    <div class ="product-content">
+                      <div class ="product-image">
+                        <a href ="#"><img src ="image1.jpg" class="image1" alt ="sofa&sectionals"></a> 
+                         </div> 
+                           <div class = "desc">
+                              <h2>Sofas & Sectionals</h2>
+              </div>
+              </div> 
+               </div>
+               <!--end-->
+      
+               <div class ="card">
+                <div class ="product-content">
+                  <div class ="product-image">
+                    <a href ="#"><img src ="image6.jpg" class="image1" alt ="fabrics&swatches"></a> 
+                     </div> 
+                     <div class = "desc">
+                      <h2>Fabrics & Swatches</h2>
+                      
+          </div>
+          </div> 
+           </div>
+           <!--end-->
+
+           <div class ="card">
+            <div class ="product-content">
+              <div class ="product-image">
+                <a href ="#"><img src ="pillow.jpg" class="image1" alt ="ThrowPillow"></a> 
+                 </div> 
+                 <div class = "desc">
+                  <h2>Throw Pillows</h2>
+      </div>
+      </div> 
+       </div>
+       <!--end-->
+                 
+   
+      
+          </div>
+        </div>
+
+
+
+  
+        <div class="netflix-slider">
+        <div class = "sofa-name">Sofas & Sectionals</div>
+        <div class="swiper-container swiper">
+        <div class="swiper-wrapper">
+        <div class="swiper-slide"><a href ="login.html"></a><img src="image1.jpg" alt="sofa1"><h2> Name</h2></div></a>
+        <div class="swiper-slide"><img src="image2.jpg" alt="sofa2"><h2> Name</h2></div>
+        <div class="swiper-slide"><img src="image3.jpg" alt="sofa3"><h2> Name</h2></div>
+        <div class="swiper-slide"><img src="image4.jpg" alt="sofa4"><h2> Name</h2></div>
+        <div class="swiper-slide"><img src="image6.jpg" alt="sofa5"><h2> Name</h2></div>
+        <div class="swiper-slide"><img src="image1.jpg" alt="sofa1"><h2> Name</h2></div>
+        <div class="swiper-slide"><img src="image2.jpg" alt="sofa2"><h2> Name</h2></div>
+        <div class="swiper-slide"><img src="image3.jpg" alt="sofa3"><h2> Name</h2></div>
+        <div class="swiper-slide"><img src="image4.jpg" alt="sofa4"><h2> Name</h2></div>
+        <div class="swiper-slide"><img src="image6.jpg" alt="sofa5"><h2> Name</h2></div>
+        </div>
+     
+         <!---- Add Pagination -->
+      <!-- <div class="swiper-pagination"></div>-->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+  </div>
+
+
+    <!---sectionals-->
+      <div class="netflix-slider"> 
+    <div class = "sofa-name">Fabrics &Swatches</div> 
+    <div class="swiper-container swiper"><div class="swiper-wrapper">
+    <div class="swiper-slide"><img src="image1.jpg" alt="sofa1"><h2> Name</h2></div>
+    <div class="swiper-slide"><img src="image2.jpg" alt="sofa2"><h2> Name</h2></div>
+    <div class="swiper-slide"><img src="image3.jpg" alt="sofa3"><h2> Name</h2></div>
+    <div class="swiper-slide"><img src="image4.jpg" alt="sofa4"><h2> Name</h2></div>
+    <div class="swiper-slide"><img src="image6.jpg" alt="sofa5"><h2> Name</h2></div>
+    <div class="swiper-slide"><img src="image1.jpg" alt="sofa1"><h2> Name</h2></div>
+    <div class="swiper-slide"><img src="image2.jpg" alt="sofa2"><h2> Name</h2></div>
+    <div class="swiper-slide"><img src="image3.jpg" alt="sofa3"><h2> Name</h2></div>
+    <div class="swiper-slide"><img src="image4.jpg" alt="sofa4"><h2> Name</h2></div>
+    <div class="swiper-slide"><img src="image6.jpg" alt="sofa5"><h2> Name</h2></div>
+    </div>
+
+    <!--  Add Pagination -->
+  <!-- <div class="swiper-pagination"></div> -->
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+
+</div>
+</div>
+
+ <!---Throw Pillows-->
+ <div class="netflix-slider"> 
+  <div class = "sofa-name">Throw Pillows</div> 
+  <div class="swiper-container swiper"><div class="swiper-wrapper">
+  <div class="swiper-slide"><img src="image7.jpg" alt="sofa1"><h2> Name</h2></div>
+  <div class="swiper-slide"><img src="image7.jpg" alt="sofa2"><h2> Name</h2></div>
+  <div class="swiper-slide"><img src="image7.jpg" alt="sofa3"><h2> Name</h2></div>
+  <div class="swiper-slide"><img src="image7.jpg" alt="sofa4"><h2> Name</h2></div>
+  <div class="swiper-slide"><img src="image7.jpg" alt="sofa5"><h2> Name</h2></div>
+  <div class="swiper-slide"><img src="image7.jpg" alt="sofa1"><h2> Name</h2></div>
+  <div class="swiper-slide"><img src="image7.jpg" alt="sofa2"><h2> Name</h2></div>
+  <div class="swiper-slide"><img src="image7.jpg" alt="sofa3"><h2> Name</h2></div>
+  <div class="swiper-slide"><img src="image7.jpg" alt="sofa3"><h2> Name</h2></div>
+  <div class="swiper-slide"><img src="image7.jpg" alt="sofa3"><h2> Name</h2></div>
+  <div class="swiper-slide"><img src="image7.jpg" alt="sofa4"><h2> Name</h2></div>
+  <div class="swiper-slide"><img src="image7.jpg" alt="sofa5"><h2> Name</h2></div>
+  </div>
+
+  <!--  Add Pagination -->
+<!-- <div class="swiper-pagination"></div> -->
+<div class="swiper-button-next"></div>
+<div class="swiper-button-prev"></div>
+
+</div>
+</div>
+<script>
+
+    var swiper = new Swiper('.swiper', {
+      slidesPerView: 5,
+      spaceBetween: 10,
+      slidesPerGroup: 2,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+</script>
+<!--Location Map start-->
+        <div class="container-map">
+         <div class ="title-location">
+          <h2> Location Map</h2>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15481.194777558025!2d121.24927959999404!3d14.059531077348934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bd42a6edbe10ff%3A0x62f0d3facb6ed8f1!2sSan%20Agustin%2C%20Brgy%20San%20Lucas%201%2C%20Alaminos%2C%20Laguna!5e0!3m2!1sen!2sph!4v1658935953346!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+<!--Location Map end-->
+
+
+
+<!--Footer start-->
+<footer>
+  <section class="container-footer">
+      <div class = "contact-info"> 
+        <h3>CONTACT INFO</h3>
+       
+          <div class = "mobile">
+          <span class = "fas fa-light fa-mobile-screen"></span>
+          <span class ="footer-text">09123456789</span>
+    </div>
+    
+<div class = "email">
+  <span class = "fas fa-light fa-envelope"></span>
+  <span class ="ion-dot"></span>
+  <span class ="footer-text">email</span> 
+</div> 
+
+<div class = "facebook">
+  <span class = "fa-brands fa-facebook-f"></span>
+  <span class ="footer-text">Victors Upholstery</span> 
+</div>
+
+<div class = "address">
+  <span class = "fas fa-light fa-location-dot"></span>
+  <span class ="footer-text">Address</span> 
+</div> 
+</div>
+
+<div class = "victors-info"> 
+  <h3>VICTOR'S UPHOLSTERY INFO</h3>
+  <ul>
+    <li><a href = "#">ABOUT US</a></li>
+    <li><a href = "#">TERMS & CONDITIONS</a></li>
+    <li><a href = "#">PRIVACY & POLICY</a></li>
+  </ul>
+  </div>
+
+
+      <div class = "payment-method"> 
+        <h3>PAYMENT METHODS</h3>
+        <ul>
+          <li><a href = "#">G-CASH</a></li>
+          <li><a href = "#">PAYMAYA</a></li>
+          <li><a href = "#">REMITANCE CENTER</a></li>
+   </ul>
+
+   
+      </div>
+    </div> 
+ 
+  
+  </section>
+
+</footer>
+<!--Footer end-->
+
+
+</body>
+</html>
+          

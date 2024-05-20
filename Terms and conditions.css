@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+	background-color: #F7ECDE;
+}
+
+/*header start*/
+*{
+  font-family: 'Poppins', sans-serif;
+  margin:0; padding:0;
+  box-sizing: border-box;
+  outline: none; 
+  border:none;
+  text-decoration: none;
+  transition: all .2s linear;
+  list-style: none;
+  
+}
+
+html{
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 30px;
+  scroll-behavior: smooth;
+}
+.header{
+  text-align: center;
+   position: relative;
+  
+}
+
+
+/*.header*/
+.header .header-1{
+  background: #fff;
+  padding: 10px 9%;
+  display :flex;
+  align-items: center;
+  justify-content:  space-between;
+  
+}
+.header .header-1 .logo{
+font-size: 20px;
+font-weight: bolder;
+color:black;
+
+}
+
+/*search-form*/
+.header .header-1 .search-form{
+  width:410px;
+  height:50px;
+  overflow: hidden;
+  background:#fff;
+  display:flex;
+  align-items: center;
+  border-radius: 8px;
+  border: 1px solid rgba(0,0,0,.1);
+  box-shadow: rgba(0,0,0,.1);
+}
+/*input*/
+.search-form input{
+  font-size: 13px;
+  padding:0 20px;
+  height:100%;
+  width:100%;
+  text-transform: none;
+  color:black;
+}
+/* search icon*/
+.search-form label{
+  font-size: 15px;
+  padding-right: 30px;
+  color:black;
+  cursor: pointer;
+}
+
+#search-btn{
+display: none;
+}
+
+.header .header-1 .search-form label:hover{
+  color:#87ceeb;
+}
+/* cart & account icons*/
+.header .header-1 .icons div,
+.header .header-1 .icons a{
+  font-size: 20px;
+  margin-left: 10px;
+  color:black;
+  cursor: pointer;
+}
+
+/* icons hover*/
+.header .header-1 .icons div:hover,
+.header .header-1 .icons a:hover{
+  color:#42A5F5;
+}
+/* header-2*/
+.header .header-2{
+  background: #fff;
+  text-align:center;
+}
+/* navbar*/
+.header .header-2 .navbar a{
+  color:#fff;
+  display:20px;
+  font-size: 18px;
+}
+/* navbar hover*/
+.header .header-2 .navbar a:hover{
+  background:black;
+}
+.header .header-2.active{
+  position:fixed;
+  top:0; left:0; right:0;
+  z-index: 1000;
+}
+
+.header .header-2 .navbar{
+  text-align: center;
+  background-color:  #18978F;
+}
+
+.header .header-2 .navbar a{
+  color:#fff;
+  display: inline-block;
+  padding:20px;
+  font-size: 2opx;
+}
+
+/*header end*/
+
+/*logo*/
+.vp-logo{
+    margin-top: 5px;
+    margin-left:10px ;
+    width:120px;
+    height:70px ;
+}
+
+.herotitle{
+    margin-bottom: 20px;
+    font-size: 25px;
+    text-align: center;
+  
+    
+}
+
+.terms{
+    margin: 30px;
+}
+.date {
+    text-align: center;
+    font-size: 12px;
+    margin-right:60px;
+    font-weight: 600;
+ 
+    
+}
+p{
+    font-size: 16px;
+    margin-right:60px;
+    text-align: justify;
+    padding: 15px;
+    padding-left: 50px;
+    
+}
+.privacy, .eligibility, .copyright, .user-content, .trademarks, .limited, .account, .payment, .warranty, .refunds{
+    padding-left: 50px;
+    text-align: left;
+    font-size: 23px;
+
+}

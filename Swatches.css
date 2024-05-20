@@ -1,0 +1,323 @@
+*{
+    font-family: poppins;
+  
+  }
+  
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+  
+  
+  *{
+    font-family: 'Poppins', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; 
+    border:none;
+    text-decoration: none;
+    transition: all .2s linear;
+    
+  }
+  
+  html{
+    font-size: 100.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 30px;
+    scroll-behavior: smooth;
+  }
+  .header{
+    text-align: center;
+     position: relative;
+    
+  }
+  
+  /*.header*/
+  .header .header-1{
+    background: #fff;
+    padding: 10px 9%;
+    display :flex;
+    align-items: center;
+    justify-content:  space-between;
+    
+  }
+  .header .header-1 .logo{
+  font-size: 20px;
+  font-weight: bolder;
+  color:black;
+  }
+  
+  /*search-form*/
+  .header .header-1 .search-form{
+    width:410px;
+    height:50px;
+    overflow: hidden;
+    background:#fff;
+    display:flex;
+    align-items: center;
+    border-radius: 8px;
+    border: 1px solid rgba(0,0,0,.1);
+    box-shadow: rgba(0,0,0,.1);
+  }
+  /*input*/
+  .search-form input{
+    font-size: 13px;
+    padding:0 20px;
+    height:100%;
+    width:100%;
+    text-transform: none;
+    color:black;
+  }
+  /* search icon*/
+  .search-form label{
+    font-size: 15px;
+    padding-right: 30px;
+    color:black;
+    cursor: pointer;
+  }
+  
+  #search-btn{
+  display: none;
+  }
+  
+  .header .header-1 .search-form label:hover{
+    color:#87ceeb;
+  }
+  /* cart & account icons*/
+  .header .header-1 .icons div,
+  .header .header-1 .icons a{
+    font-size: 20px;
+    margin-left: 10px;
+    color:black;
+    cursor: pointer;
+  }
+  
+  /* icons hover*/
+  .header .header-1 .icons div:hover,
+  .header .header-1 .icons a:hover{
+    color:#42A5F5;
+  }
+  /* header-2*/
+  .header .header-2{
+    background: #54bab880;
+    text-align:center;
+  }
+  /* navbar*/
+  .header .header-2 .navbar a{
+    color:#fff;
+    display:20px;
+    font-size: 18px;
+  }
+  /* navbar hover*/
+  .header .header-2 .navbar a:hover{
+    background:black;
+  }
+  .header .header-2.active{
+    position:fixed;
+    top:0; left:0; right:0;
+    z-index: 1000;
+  }
+  .header .header-2 .navbar{
+    text-align: center;
+  }
+  
+  .header .header-2 .navbar a{
+    color:#fff;
+    display: inline-block;
+    padding:20px;
+    font-size: 2opx;
+  }
+  
+  /*Breadcrumbs*/
+  
+  .breadcrumbs{
+  padding: 10px ;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  }
+  .breadcrumbs_items{
+    display:inline-block;
+  }
+  .breadcrumbs_items:not(:last-of-type)::after{
+    content: '\203a';
+    margin: 0 5px;
+    color: #cccccc;
+  }
+  .breadcrumbs_link{
+    text-decoration: none;
+    color: #999999;
+  }
+  .breadcrumbs_link:hover{
+    text-decoration: underline;
+  }
+  .breadcrumbs_link--active{
+    color:#6ca834;
+    font-weight:600;
+  }
+  /*End of Breadcrumbs*/
+  
+  /*Gallery start*/
+  
+  
+  /* Center website */
+  .main {
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  .gallery-name {
+    text-align: center;
+  }
+  .p{
+    text-align: center;
+  
+  }
+  .row {
+    margin: 8px -16px;
+  }
+  
+  /* Add padding BETWEEN each column */
+  .row,
+  .row > .column {
+    padding: 8px;
+  }
+  
+  /* Create four equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 25%;
+  }
+  
+  /* Clear floats after rows */ 
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Content */
+  .content {
+    background-color: white;
+    padding: 10px;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 900px) {
+    .column {
+      width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
+  
+  /*Footer*/
+  
+  footer {
+    background-color: rgb(5, 2, 2);
+    color:white;
+    display: flex;
+    flex-direction: column;
+    /* position: fixed;
+    bottom: 0;*/
+    padding: 50px 100px;
+    margin:370px 0px 0px 0px;
+    
+    }
+    .container-footer{
+    display:flex;
+    gap: 20px;
+    padding: 50px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    
+    }
+    .contact-info{
+    /**background-color: orange;/**/
+    flex-grow: 1;
+    flex-basis: 100%;
+    line-height: 1.6;
+    width: 250px;
+    text-align: left;
+    margin-left: 20px;
+    }
+    .footer-text{
+    font-size: 15px;
+    color:#E8E8E8;
+    }
+    
+    .victors-info{
+    /**background-color: black;/**/
+    flex-basis: 100%;
+    text-align: left;
+    margin-left: 20px;
+    
+    }
+    .victors-info ul{
+    list-style: none;
+    line-height: 1.7;
+    margin-left:-40px;
+    text-align: left;
+    margin-left: 1px;
+    }
+    .victors-info a {
+    color:#E8E8E8;
+    text-decoration: none;
+    font-size: 12px;
+    
+    }
+    .victors-info h3 {
+    font-size: 20px;
+    
+    }
+    .victors-info a:hover {
+    color:rgb(100, 100, 228);
+    text-decoration: underline;
+    font-size: 12px;
+    
+    }
+    .payment-method{
+    /**background-color: rgb(95, 17, 17);/**/
+    flex-grow: 1;
+    flex-basis: 100%;
+    width: 250px;
+    text-align: left;
+    margin-left: 20px;
+    
+    }
+    
+    .payment-method ul{
+    list-style: none;
+    line-height: 1.7;
+    margin-left:-40px;
+    text-align: left;
+    margin-left: 1px;
+    }
+    .payment-method a{
+    color:white;
+    text-decoration: none;
+    font-size: 12px;
+    
+    }
+    
+    .payment-method a:hover{
+    color:rgb(100, 100, 228);
+    text-decoration: underline;
+    font-size: 12px;
+    
+    }
+    /**  contact info..../**/
+    .container-footer h3{
+    margin-bottom: 20px;
+    font-size: 15px;
+    font-weight: bold;
+    }
+    
+    @media only screen and (max-width: 768px) {
+    .container-footer{
+      flex-direction: column;
+    }
+    }
+    

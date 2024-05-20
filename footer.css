@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  footer {
+    background-color: rgb(5, 2, 2);
+    color:white;
+    display: flex;
+    flex-direction: column;
+   /* position: fixed;
+    bottom: 0;*/
+    padding: 50px 100px;
+    margin:370px 0px 0px 0px;
+  
+  }
+  .container-footer{
+    display:flex;
+    gap: 20px;
+    padding: 50px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  .contact-info{
+    /**background-color: orange;/**/
+  
+    flex-grow: 1;
+    flex-basis: 100%;
+    line-height: 1.6;
+    width: 250px;
+  }
+  .footer-text{
+  font-size: 15px;
+  color:#E8E8E8;
+  }
+  
+  .victors-info{
+  /**background-color: black;/**/
+  flex-basis: 100%;
+    
+  }
+  .victors-info ul{
+    list-style: none;
+    line-height: 1.7;
+    margin-left:-40px;
+  }
+  .victors-info a {
+    color:#E8E8E8;
+    text-decoration: none;
+    font-size: 12px;
+  }
+  .victors-info h3 {
+    font-size: 20px;
+  }
+  .victors-info a:hover {
+    color:rgb(100, 100, 228);
+    text-decoration: underline;
+    font-size: 12px;
+   
+  }
+  .payment-method{
+   /**background-color: rgb(95, 17, 17);/**/
+    flex-grow: 1;
+    flex-basis: 100%;
+    width: 250px;
+  }
+  
+  .payment-method ul{
+    list-style: none;
+    line-height: 1.7;
+    margin-left:-40px;
+    
+  }
+  .payment-method a{
+    color:white;
+    text-decoration: none;
+    font-size: 12px;
+   
+  }
+  
+   
+  .payment-method a:hover{
+    color:rgb(100, 100, 228);
+    text-decoration: underline;
+    font-size: 12px;
+   
+  }
+  /**  contact info..../**/
+  .container-footer h3{
+    margin-bottom: 20px;
+    font-size: 15px;
+    font-weight: bold;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .container-footer{
+      flex-direction: column;
+    }
+  }
+  

@@ -1,0 +1,565 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+*{
+  font-family: 'Poppins', sans-serif;
+  margin:0; padding:0;
+  box-sizing: border-box;
+  outline: none; 
+  border:none;
+  text-decoration: none;
+  transition: all .2s linear;
+  
+}
+
+
+html{
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 30px;
+  scroll-behavior: smooth;
+}
+
+/*html::-webkit-scrollbar{
+
+  width:1rem;
+}
+
+html::-webkit-scrollbar-track{
+  background:transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+  background:black;
+}*/
+
+.header{
+  text-align: center;
+   position: relative;
+  
+}
+
+
+/*.header*/
+.header .header-1{
+  background: #fff;
+  padding: 10px 9%;
+  display :flex;
+  align-items: center;
+  justify-content:  space-between;
+  
+}
+.header .header-1 .logo{
+font-size: 20px;
+font-weight: bolder;
+color:black;
+
+}
+
+
+
+/*.heading span{
+  font-size: 3rem;
+  padding:.5rem 2rem;
+  color:var(--black);
+  background: #fff;
+  border:var(--border);
+}*/
+
+
+
+/*search-form*/
+.header .header-1 .search-form{
+  width:410px;
+  height:50px;
+  overflow: hidden;
+  background:#fff;
+  display:flex;
+  align-items: center;
+  border-radius: 8px;
+  border: 1px solid rgba(0,0,0,.1);
+  box-shadow: rgba(0,0,0,.1);
+}
+/*input*/
+.search-form input{
+  font-size: 13px;
+  padding:0 20px;
+  height:100%;
+  width:100%;
+  text-transform: none;
+  color:black;
+}
+/* search icon*/
+.search-form label{
+  font-size: 15px;
+  padding-right: 30px;
+  color:black;
+  cursor: pointer;
+}
+
+#search-btn{
+display: none;
+}
+
+.header .header-1 .search-form label:hover{
+  color:#87ceeb;
+}
+/* cart & account icons*/
+.header .header-1 .icons div,
+.header .header-1 .icons a{
+  font-size: 20px;
+  margin-left: 10px;
+  color:black;
+  cursor: pointer;
+}
+
+/* icons hover*/
+.header .header-1 .icons div:hover,
+.header .header-1 .icons a:hover{
+  color:#42A5F5;
+}
+/* header-2*/
+.header .header-2{
+  background: #54bab880;
+  text-align:center;
+}
+/* navbar*/
+.header .header-2 .navbar a{
+  color:#fff;
+  display:20px;
+  font-size: 18px;
+}
+/* navbar hover*/
+.header .header-2 .navbar a:hover{
+  background:black;
+}
+.header .header-2.active{
+  position:fixed;
+  top:0; left:0; right:0;
+  z-index: 1000;
+}
+.header .header-2 .navbar{
+  text-align: center;
+}
+
+.header .header-2 .navbar a{
+  color:#fff;
+  display: inline-block;
+  padding:20px;
+  font-size: 2opx;
+}
+
+@media (max-width:991px){
+html{
+      font-size: 55%;
+}
+.header .header-1{
+  padding: 2rem;
+
+}
+}
+
+/*@media (max-width:768px){
+.header .header-2{
+  display: none;
+}
+}*/
+
+@media (max-width:450px){
+html{
+      font-size: 55%;
+}
+
+}
+
+/* slide*/ 
+
+.mySlides{
+  display: none;
+  overflow: hidden;
+}
+.image-slider{
+      width: 100%;
+      height: 500px;
+      padding-top: -5px;
+      
+  }
+/* Slideshow container  */             
+  .slideshow-container {
+      max-width: 2000px;
+      position: relative;
+      margin:0 auto;   
+      
+    }
+
+.dot{
+text-align:center;
+}
+/* Next & previous buttons    */ 
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.1s;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.mySlides fade img{
+  width:100%;
+  height:100%;
+  
+
+}
+/* Position the "next button" to the right */ 
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+/* On hover, add a black background color with a little bit see-through */ 
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */ 
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;  
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+/* The dots/bullets/indicators */ 
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color:blue ;
+}
+
+/* Fading animation */ 
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size*/ 
+
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+
+
+.btn-cn{
+  width:160px;
+  height: 40px;
+  background: #ff7200;
+  border: none;
+  margin: 10px 30px 10px 100px; 
+  font-size: 18px;
+  border-radius: 10px;
+  cursor:pointer;
+  transition: .4s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}  
+.btn-cn:hover{
+  background-color: #fff;
+}
+
+/*categories*/
+
+.product-container{
+width: 100%;
+height: auto;
+padding-top:40px;
+
+}
+.title-categories{
+font-size:25px;
+margin-top:30px;
+font-weight: 550;
+margin-left: 80px;
+text-align: left;
+}
+
+.row{
+width:60%;
+margin:auto;
+margin-bottom: 40px;
+margin-top: 20px;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-items: center;
+justify-content: center;
+
+
+}
+
+.card{
+background-color: #F5F5F5;;
+width: 200px;
+height:200px;
+margin: 30px 15px 10px 15px;
+border-radius: 20px;
+cursor: pointer;
+
+}
+
+.image1{
+height:160px;
+padding:40px 13px 20px 13px;
+
+}
+.product-image{
+text-align: center;
+}
+
+.desc{
+
+text-align: center;
+}
+.desc h2 {
+font-size: 15px;
+margin: 5px 20px 0px 20px;
+
+}
+
+/*slider*/
+html, body {
+position: relative;
+height: 100%;
+}
+
+body {
+
+font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+font-size: 14px;
+color:  #000;
+margin: 0;
+padding: 0;
+}
+
+.swiper-container {
+width: 100%;
+height: 100%;
+}
+
+.swiper-slide {
+text-align: center;
+font-size: 18px;
+
+}
+
+img  {
+max-width: 100%;
+height: auto;
+
+}
+h2 {
+font-size: 15px;
+margin-bottom: 50px;
+}
+.sofa-name{
+font-size: 20px;
+padding: 10px 0;
+text-align: left;
+margin-left: 90px;
+font-weight: 550;
+}
+
+
+:root {
+--swiper-theme-color: #fff;
+}
+
+.netflix-slider .swiper-wrapper {
+padding: 20px 0;
+}
+
+.netflix-slider .swiper-slide {
+-webkit-transition: 250ms all;
+transition: 250ms all;
+}
+
+.netflix-slider .swiper-slide:hover {
+-webkit-transform: scale(1.2);
+        transform: scale(1.2);
+z-index: 1;
+}
+
+.netflix-slider .swiper-slide:first-child:hover {
+margin: 0 40px;
+}
+
+.netflix-slider .swiper-slide:last-child:hover {
+margin: 0 -40px;
+}
+
+/*Location Map*/
+
+.container-map{
+  width: 100%;
+  height:70px;
+
+
+}
+
+.title-location h2{
+font-size: 20px;
+padding: 10px 0;
+text-align: left;
+margin-left: 90px;
+font-weight: 550;
+
+}
+
+iframe{
+
+width: 70%;
+height:300px;
+/*Night mode
+filter:invert(100%);*/
+}
+
+
+/*Footer*/
+
+footer {
+background-color: rgb(5, 2, 2);
+color:white;
+display: flex;
+flex-direction: column;
+/* position: fixed;
+bottom: 0;*/
+padding: 50px 100px;
+margin:370px 0px 0px 0px;
+
+}
+.container-footer{
+display:flex;
+gap: 20px;
+padding: 50px 20px;
+max-width: 1000px;
+margin: 0 auto;
+
+}
+.contact-info{
+/**background-color: orange;/**/
+flex-grow: 1;
+flex-basis: 100%;
+line-height: 1.6;
+width: 250px;
+text-align: left;
+margin-left: 20px;
+}
+.footer-text{
+font-size: 15px;
+color:#E8E8E8;
+}
+
+.victors-info{
+/**background-color: black;/**/
+flex-basis: 100%;
+text-align: left;
+margin-left: 20px;
+
+}
+.victors-info ul{
+list-style: none;
+line-height: 1.7;
+margin-left:-40px;
+text-align: left;
+margin-left: 1px;
+}
+.victors-info a {
+color:#E8E8E8;
+text-decoration: none;
+font-size: 12px;
+
+}
+.victors-info h3 {
+font-size: 20px;
+
+}
+.victors-info a:hover {
+color:rgb(100, 100, 228);
+text-decoration: underline;
+font-size: 12px;
+
+}
+.payment-method{
+/**background-color: rgb(95, 17, 17);/**/
+flex-grow: 1;
+flex-basis: 100%;
+width: 250px;
+text-align: left;
+margin-left: 20px;
+
+}
+
+.payment-method ul{
+list-style: none;
+line-height: 1.7;
+margin-left:-40px;
+text-align: left;
+margin-left: 1px;
+}
+.payment-method a{
+color:white;
+text-decoration: none;
+font-size: 12px;
+
+}
+
+.payment-method a:hover{
+color:rgb(100, 100, 228);
+text-decoration: underline;
+font-size: 12px;
+
+}
+/**  contact info..../**/
+.container-footer h3{
+margin-bottom: 20px;
+font-size: 15px;
+font-weight: bold;
+
+}
+
+@media only screen and (max-width: 768px) {
+.container-footer{
+  flex-direction: column;
+}
+}

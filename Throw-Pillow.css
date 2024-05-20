@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+*{
+  font-family: 'Poppins', sans-serif;
+  margin:0; padding:0;
+  box-sizing: border-box;
+  outline: none; 
+  border:none;
+  text-decoration: none;
+  transition: all .2s linear;
+  
+}
+
+html{
+  font-size: 100.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 30px;
+  scroll-behavior: smooth;
+  
+}
+.header{
+  text-align: center;
+   position: relative;
+  
+}
+
+/*.header*/
+.header .header-1{
+  background: #fff;
+  padding: 10px 9%;
+  display :flex;
+  align-items: center;
+  justify-content:  space-between;
+  
+}
+.header .header-1 .logo{
+font-size: 20px;
+font-weight: bolder;
+color:black;
+}
+
+/*search-form*/
+.header .header-1 .search-form{
+  width:410px;
+  height:50px;
+  overflow: hidden;
+  background:#fff;
+  display:flex;
+  align-items: center;
+  border-radius: 8px;
+  border: 1px solid rgba(0,0,0,.1);
+  box-shadow: rgba(0,0,0,.1);
+}
+/*input*/
+.search-form input{
+  font-size: 13px;
+  padding:0 20px;
+  height:100%;
+  width:100%;
+  text-transform: none;
+  color:black;
+}
+/* search icon*/
+.search-form label{
+  font-size: 15px;
+  padding-right: 30px;
+  color:black;
+  cursor: pointer;
+}
+
+#search-btn{
+display: none;
+}
+
+.header .header-1 .search-form label:hover{
+  color:#87ceeb;
+}
+/* cart & account icons*/
+.header .header-1 .icons div,
+.header .header-1 .icons a{
+  font-size: 20px;
+  margin-left: 10px;
+  color:black;
+  cursor: pointer;
+}
+
+/* icons hover*/
+.header .header-1 .icons div:hover,
+.header .header-1 .icons a:hover{
+  color:#42A5F5;
+}
+/* header-2*/
+.header .header-2{
+  background: #54bab880;
+  text-align:center;
+}
+/* navbar*/
+.header .header-2 .navbar a{
+  color:#fff;
+  display:20px;
+  font-size: 18px;
+}
+/* navbar hover*/
+.header .header-2 .navbar a:hover{
+  background:black;
+}
+.header .header-2.active{
+  position:fixed;
+  top:0; left:0; right:0;
+  z-index: 1000;
+}
+.header .header-2 .navbar{
+  text-align: center;
+}
+
+.header .header-2 .navbar a{
+  color:#fff;
+  display: inline-block;
+  padding:20px;
+  font-size: 20px;
+}
+/*ends*/
+
+.rate {
+    float: left;
+    height: 46px;
+    padding: 0 10px;
+	font-size: 18px;
+}
+.rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.rate:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:30px;
+    color:#ccc;
+}
+.rate:not(:checked) > label:before {
+    content: '★ ';
+}
+.rate > input:checked ~ label {
+    color: #ffc700;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}
+
+.fa-cart-plus{
+  background:#0652DD;
+}
+
+.addtocart {
+  display:block;
+  padding:0.5em 1em 0.5em 1em;
+  border-radius:100px;
+  border:none;
+  font-size:1.5em;
+  position:relative;
+  background:#0652DD;
+  cursor:pointer;
+  height:1.6em;
+  width:8.5em;
+  overflow:hidden;
+  transition:transform 0.1s;
+  z-index:1;
+  margin-top: 10%;
+}
+.addtocart:hover {
+  transform:scale(1.1);
+}
+.pretext {
+  color:#fff;
+  background:#0652DD;
+  position:absolute;
+  top:0;
+  left:0;
+  height:100%;
+  width:100%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-family: 'Poppins', sans-serif;
+}
+i{
+  margin-right:10px;
+}
+.done {
+  background:#be2edd;
+  position:absolute;
+  width:100%;
+  top:0;
+  left:0;
+  transition:transform 0.3s ease;
+
+  transform:translate(-110%) skew(-40deg);
+}
+.posttext{
+  background:#be2edd;
+}
+.fa-check{
+  background:#be2edd;
+}
+
+
+body{
+  background-color: #F7ECDE;
+  transition: 0.6s linear;
+}
+
+.flex-container {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+	margin-left: 20px;
+	margin-top: 130px;
+	gap: 20px;
+}
+.flex-container > div {
+	width: 450px;
+	height: 600px;
+	background-color: #e9dac18a;
+	border-radius: 20px;
+	border: 2px solid rgba(0,0,0,0.2);
+}
+
+p { 
+	font-size: 18px;
+	margin-left: 20px;
+}
+.title {
+	font-weight: bold;
+	font-size: 25px;
+	text-transform: uppercase;
+	text-align: center;
+	margin-top: 20px;
+	margin-left: 5px;
+}
+
+#sofa {
+  width: 70%;
+  height: 50%;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  display: block;
+  margin: auto;
+  cursor: pointer;
+   transform: scale(1.1);
+  transition: 5s;
+
+}
+
+#card1, #card2, #card3, #card4, #card5, #card6, #card7, #card8, #card9, #card10, #card11, #card12, #card13, #card14 {
+	border-bottom-color: black;
+	border-bottom-width: 3px;
+	transition: 5s;
+}
+
+.header {
+	font-size: 24px;
+
+	 font-family: Poppins;
+	 margin-bottom: 3%;
+}
+.meta {
+	color: black;
+	font-size: 18px;
+	font-family: Poppins;
+	transition: .6s linear;
+	margin-left: 4%;
+	margin-top: 8%;
+}
+.description {
+	color: black;
+	font-size: 18px;
+	font-family: Poppins;
+	transition: .6s linear;
+	margin-left: 4%;
+	margin-top: 2%;
+}
